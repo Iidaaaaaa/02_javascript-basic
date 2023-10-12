@@ -51,6 +51,22 @@ let n3 = 5;
 n3++ //インクリメント　１足す
 console.log(n3);//6
 
+###　ドキュメント
+
+// ul タグの要素を取得
+const element = document.querySelector("ul");
+// 新しく li タグの要素を作成
+const liLast = document.createElement("li");
+liLast.textContent = "メロン";
+// リストの最後の子要素として追加
+element.appendChild(liLast);
+
+//新しい要素を作る
+const lilast = document.createElement("li");
+console.log(lilast);
+lilast.textContent = "メロン";
+console.log(lilast);
+
 ## 10 月 5 日
 
 - インターネットの基本について理解する。
