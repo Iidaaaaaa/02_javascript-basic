@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>演算子と型</title>
+</head>
+<body>
+
+    <script>
+        console.log("トライデントコンピュータ専門学校\nwebデザイン学科");//文字列リテラル＝文字列型
+        console.log(567);//数値リテラル＝数値型
+        console.log("123");//""があれば文字列
+        console.log(`トライデントコンピュータ専門学校
+        Webデザイン学科川口英生`)//テンプレートリテラル=文字列型
+
+        //文字列の連結
+        console.log("ABC" + "DEF");
+        console.log("円周率は" + 3.14 + "です");//文字列　＋数値
+        console.log("計算結果は:" + 123 + 456 );//文字列　＋　数値の計算
+        console.log(123 + 456 +"となりました") //数値の計算 +文字列
+         console.log("計算結果は:" + (123 + 456));//文字列　＋　(数値の計算)
+         console.log("2" - 1);//文字列 - 数値型
+         console.log("2" * 1); //2x1=2
+            console.log("2" / 4); //2÷4=0.5
+
+
+            //変数の宣言・代入
+            let a;//変数の宣言
+            a = 10;//値の代入
+            console.log(a);
+
+            a = "Hello"; //値の再代入(文字列型)
+            console.log(a);
+            //定数の宣言・代入
+            const PI = 3.14;
+            console.log(PI);
+
+            //複合演算子
+
+            let n = 5;
+            n = n + 2;
+            console.log(n); //7
+
+            let n2 = 5;
+            n2 += 2;//複合代入演算子 n2 = n2 + 2 と同じ
+            console.log(n2);
+
+            //インクリメント
+            let n3 = 5;
+            n3++ //インクリメント　１足す
+            console.log(n3);//6
+
+            //文字列の扱い
+            let s = "hello";
+            console.log(s.toUpperCase());
+
+            console.log(s.length);
+
+
+    </script>
+</body>
+</html>
