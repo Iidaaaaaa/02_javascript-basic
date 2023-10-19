@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>sample7-7</title>
+  </head>
+  <body>
+    <h1>果物の種類</h1>
+    <ul id="fruitslist" class="listbox-list">
+      <li>りんご</li>
+      <li>みかん</li>
+      <li>ばなな</li>
+    </ul>
+    <!--リストを操作するDOM操作のスクリプト-->
+    <script>
+      // ulタグの要素を取得
+      const element = document.querySelector("ul");
+      // 新しくliタグの要素を作成
+      const liLast = document.createElement("li");
+      liLast.textContent = "メロン";
+      // リストの最後の子要素として追加
+      element.appendChild(liLast);
+
+      //新しい要素を作る
+      const lilast = document.createElement("li");
+      console.log(lilast);
+      lilast.textContent = "メロン";
+      console.log(lilast);
+
+      //   リストの最後に追加する、。変数lilastの<li>メロン</li>を変数element内の<ul></ul>に追加する
+      element.appendChild(lilast);
+      //   いちごを追加したい
+      lilast.append("いちご");
+    </script>
+  </body>
+</html>

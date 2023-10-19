@@ -5,6 +5,34 @@
 1. 10 月５日（木）はじめの一歩
 2. １０月５日（木）GitHub リポジトリ作成
 3. 10 月 12 日
+4. 10 月 19 日　 for 文
+
+## １０月１９日
+
+- For 文
+- 子要素の追加
+
+### for 文
+
+// for (let i = 0; i < 9; i++) {
+// //この i を使って 7 の段をコンソールに表示させてください。
+// console.log("7", "x", i + 1, "=", 7 \* (i + 1));
+// }
+上が計算のやり方
+下が子要素を追加する for 文
+
+      for (let i = 0; i < fruits.length; i++) {
+        // liを創出する
+        const lilast = document.createElement("li");
+
+        // liに値（果物→配列fruitsの中にある）を代入
+        console.log(fruits[i]);
+        // りんご・もも・バナナが取れる
+        //   創出したliのないように果物を代入
+        lilast.textContent = fruits[i];
+        // element(ul)の中に最後に追加
+        element.appendChild(lilast);
+      }
 
 ## 10 　月　１２　日
 

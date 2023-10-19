@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>exmample7-1</title>
+  </head>
+  <body>
+    <h1>人気フルーツ一覧</h1>
+    <ul id="fruitslist" class="listbox-list"></ul>
+    <script>
+      //   for (let i = 0; i < 4; i++) {
+      //     // 繰り返し処理を書いていきます
+      //     // 0~3を表示したい。
+      //     console.log(i);
+      //   }
+
+      //   let name_list = ["松田", "田中", "中山", "山本", "本田"];
+      //   for (let i = 0; i < name_list.length; i++) {
+      //     console.log(i + 1 + "人目は" + name_list[i]);
+      //   }
+      // ulの中に果物を一度にliに入れたい。
+      // 配列fruitを宣言・値を代入。
+      const fruits = ["りんご", "もも", "バナナ"];
+      // ulをJavaScript空間に引きずり込む。
+      const element = document.querySelector("#fruitslist");
+      console.log(element);
+      //   fruitsの要素数文だけfor文で回す。
+      for (let i = 0; i < fruits.length; i++) {
+        // liを創出する
+        const lilast = document.createElement("li");
+
+        // liに値（果物→配列fruitsの中にある）を代入
+        console.log(fruits[i]);
+        // りんご・もも・バナナが取れる
+        //   創出したliのないように果物を代入
+        lilast.textContent = fruits[i];
+        // element(ul)の中に最後に追加
+        element.appendChild(lilast);
+      }
+    </script>
+  </body>
+</html>
