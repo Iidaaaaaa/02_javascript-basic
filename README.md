@@ -6,6 +6,64 @@
 2. １０月５日（木）GitHub リポジトリ作成
 3. 10 月 12 日
 4. 10 月 19 日　 for 文
+5. 10 月 26 日　 その他の document オブジェクトのメソッド
+
+##　 10 月 26 日
+
+###
+
+### その他の document オブジェクトのメソッド
+
+querySelectorAll()
+指定された CSS セレクターに一致する文書中の要素のリストを示す静的な NodeList
+指定したやつが全部出てくるやつ
+const nations_list = document.querySelectorAll("ul li");
+
+要素単独の取得は、
+
+document.querySelector(“セレクター”);
+
+複数の要素を一度に取得する場合は、
+
+document.querySelectorAll(“セレクター”);
+
+ーーーーーーーーーーーーーーーーーーーーーーーー
+
+for 文で個別に取得することもできる
+for (let i = 0; i < nations_list.length; i++) {
+console.log(nations_list[i]);
+}
+
+getElementById()
+id プロパティ（id 属性）が指定された文字列に一致する要素を表す Element オブジェクト
+
+ID の情報を入手する
+
+getElementsByTagName(), getElementsByClassName()
+指定されたタグ名を持つ要素や指定されたクラス名をすべて持つすべての子要素の動的オブジェクト HTMLCollection
+const tag_element = document.getElementsByTagName("li");
+console.log(tag_element);
+const class_element = document.getElementsByClassName("pool_b");
+console.log(class_element);
+ーーーーーーーーーーーーーーーーーーーーーーーー
+tag とか class 名を指定して情報を出す機能
+
+これも for 文で個別で出すこともできる
+
+for (let i = 0; i < tag_element.length; i++) {
+console.log(tag_element[i]);
+}
+for (let i = 0; i < class_element.length; i++) {
+console.log(class_element[i]);
+}
+
+###　予備知識
+
+      //innerHTML
+      sweetpotatos.innerHTML +=
+        "<li>べにはるか</li> <li>シルクスイート</li> <li>なると金時<span>（高系14号）</span></li>";
+
+React もこれ使うらしい(jsx)
 
 ## １０月１９日
 

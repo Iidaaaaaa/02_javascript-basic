@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=1, initial-scale=1.0" />
+    <title>演習</title>
+    <style>
+      body {
+        height: 2000px;
+      }
+      .text {
+        color: #f00;
+      }
+      .text .blue {
+        color: #00f;
+      }
+    </style>
+  </head>
+  <body>
+    <p class="text"><span></span>色です。</p>
+    <button class="red">赤色</button>
+    <button class="blue">青色</button>
+    <button class="yellow">黄色</button>
+    <script>
+      //文字の色を変えてみましょう
+      //ボタンを取得する
+      const redBtn = document.querySelector(".red");
+
+      //文字を取得する
+      const text = document.querySelector(".text");
+      const textSpan = document.querySelector(".text span");
+      //ボタンにClickイベントを設定する
+      redBtn.addEventListener("click", function () {
+        console.dir(textSpan);
+        text.style.color = "#f00";
+        text.style.fontSize = "50px";
+        textSpan.innerText = "赤";
+      });
+
+      const blueBtn = document.querySelector(".blue");
+      blueBtn.addEventListener("click", function () {
+        console.dir(textSpan);
+        text.style.color = "#00f";
+        text.style.fontSize = "50px";
+        textSpan.innerText = "青";
+      });
+
+      const yellowBtn = document.querySelector(".yellow");
+      yellowBtn.addEventListener("click", function () {
+        console.dir(textSpan);
+        text.style.color = "#ff0";
+        text.style.fontSize = "50px";
+        textSpan.innerText = "黄";
+      });
+      redBtn.addEventListener("dblclick", function () {
+        console.dir(textSpan);
+        text.style.color = "#000";
+        text.style.fontSize = "20px";
+        textSpan.innerText = "";
+      });
+      blueBtn.addEventListener("dblclick", function () {
+        console.dir(textSpan);
+        text.style.color = "#000";
+        text.style.fontSize = "20px";
+        textSpan.innerText = "";
+      });
+      yellowBtn.addEventListener("dblclick", function () {
+        console.dir(textSpan);
+        text.style.color = "#000";
+        text.style.fontSize = "20px";
+        textSpan.innerText = "";
+      });
+    </script>
+  </body>
+</html>
