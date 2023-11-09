@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>左右</title>
+    <style>
+      body {
+        height: 100vh;
+      }
+      .clickArea {
+        display: flex;
+        width: 100%;
+      }
+      .clickArea ol {
+        width: 50%;
+      }
+    </style>
+  </head>
+  <body>
+    <section>
+      <h1>左右どっち？</h1>
+      <div class="clickArea">
+        <ol class="leftzone"></ol>
+        <ol class="rightzone"></ol>
+      </div>
+    </section>
+    <script>
+      const widthsize = window.innerWidth;
+      console.log(widthsize);
+
+      const left = document.querySelector(".leftzone");
+      const right = document.querySelector(".rightzone");
+      document.body.addEventListener("click", function (event) {
+        // クリックしたX軸の数値が取れる
+        console.log(event.clientX);
+        // 以下から記述していきます
+        // 横幅がwidthsizeに入っているので、右半分左半分を分けるには？
+        if (widthsize / 2 >= event.clientX) {
+          const list = document.createElement("li");
+          list.textContent = "左";
+          left.appendChild(list);
+        } else {
+          const list = document.createElement("li");
+          list.textContent = "右";
+          right.appendChild(list);
+        }
+      });
+    </script>
+  </body>
+</html>

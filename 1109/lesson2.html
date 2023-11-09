@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>乱数を使った</title>
+  </head>
+  <body>
+    <script>
+      const num = Math.round(Math.random() * 100);
+      console.log("現在の値：" + num);
+      const rem = num % 2; //余り　2で割ってどうなると偶数ですか
+      console.log(rem);
+      if (rem == 0) {
+        console.log(num + "は偶数です。");
+      } else {
+        console.log(num + "は奇数です。");
+      }
+      //偶数を表示するif文を書いてください
+    </script>
+  </body>
+</html>
