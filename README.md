@@ -8,6 +8,26 @@
 4. 10 月 19 日　 for 文
 5. 10 月 26 日　 その他の document オブジェクトのメソッド
 6. １１月 2 日
+7. 11 月９日
+
+##　１１月９日
+
+###
+
+if 文をやった
+if (true) {
+document.body.insertAdjacentHTML("beforeEnd", "<p>num は 100 以上</p>");
+} else if (num === 0) {
+document.body.insertAdjacentHTML("beforeEnd", "<p>num は 0</p>");
+}
+こんなやつ
+if（条件式）｛ここにいつものコードを入れる｝
+if 以外の条件なら else を入れる
+
+for 文
+
+for(let i = 0; i < ここに変数.length; i++)
+これ覚えとく
 
 ##　１１月２日
 
