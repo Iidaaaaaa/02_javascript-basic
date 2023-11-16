@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>じゃんけんポン</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <h1>じゃんけんポン！</h1>
+    <h2>PC①</h2>
+    <div class="pc_1">
+      <img src="images/janken_gu.png" alt="グー" />
+      <img src="images/janken_choki.png" alt="チョキ" />
+      <img src="images/janken_pa.png" alt="パー" />
+    </div>
+    <div class="parts">
+      <button class="jankenBtn">じゃんけんポン！</button>
+      <p class="result"></p>
+    </div>
+    <h2>PC②</h2>
+    <div class="pc_2">
+      <img src="images/janken_gu.png" alt="グー" />
+      <img src="images/janken_choki.png" alt="チョキ" />
+      <img src="images/janken_pa.png" alt="パー" />
+    </div>
+    <script src="js/script.js"></script>
+    <script>
+      // //クリックイベント内に記述していきます。
+      // const guchokipaImg = [
+      //   "janken_gu.png",
+      //   "janken_choki.png",
+      //   "janken_pa.png"
+      // ];
+      // const jankenpon = document.querySelector(".jankenBtn");
+      // const pc1Area = document.querySelector(".pc_1");
+      // const pc2Area = document.querySelector(".pc_2");
+
+      // jankenpon.addEventListener("click", function () {
+      //   const pc1num = Math.round(Math.random() * 2);
+      //   const pc2num = Math.round(Math.random() * 2);
+      //   console.log(pc1num, pc2num); //インデックスの確認
+      //   pc1Area.innerHTML = '<img src="images/' + guchokipaImg[pc1num] + '">';
+      //   pc2Area.innerHTML = '<img src="images/' + guchokipaImg[pc2num] + '">';
+      // });
+    </script>
+  </body>
+</html>

@@ -47,14 +47,30 @@
 
       //次の画像を表示
       nextBtn.addEventListener("click", function () {
-        count++;
-        imageArea.setAttribute("src", "images/" + fujiImg_list[count]);
+        console.log(count);
+        if (count === 2) {
+          count = 0;
+          // ２のときに次を0にする
+          imageArea.setAttribute("src", "images/" + fujiImg_list[count]);
+        } else {
+          // ２じゃないならカウントを増やす
+          count++;
+          imageArea.setAttribute("src", "images/" + fujiImg_list[count]);
+        }
       });
 
       //前の画像を表示
       preBtn.addEventListener("click", function () {
-        count--;
-        imageArea.setAttribute("src", "images/" + fujiImg_list[count]);
+        console.log(count);
+        if (count === 0) {
+          count = 2;
+          // ０のとき次を２にする
+          imageArea.setAttribute("src", "images/" + fujiImg_list[count]);
+        } else {
+          count--;
+          // ０じゃないならカウントを減らす
+          imageArea.setAttribute("src", "images/" + fujiImg_list[count]);
+        }
       });
     </script>
   </body>

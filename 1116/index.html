@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>振り返り問題④</title>
+  </head>
+  <body>
+    <p class="result"></p>
+    <button>表示</button>
+    <script>
+      const word = ["Java", "JavaScript", "Ruby", "Go", "PHP"];
+
+      const resultbtn = document.querySelector("button");
+      const resultArea = document.querySelector(".result");
+      resultbtn.addEventListener("click", function () {
+        const num = Math.round(Math.random() * 4);
+        console.log(word[num]);
+        if (num === 1) {
+          resultArea.textContent = "JavaScript";
+        } else {
+          resultArea.textContent = "違う言語です";
+        }
+      });
+    </script>
+  </body>
+</html>

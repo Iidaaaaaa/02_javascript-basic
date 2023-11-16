@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      section {
+        width: 50%;
+        margin: auto;
+        text-align: center;
+      }
+      img {
+        width: 50%;
+      }
+      .unit {
+        font-size: 1.5em;
+      }
+      .price p {
+        display: inline-block;
+      }
+      .order {
+        font-size: 1.2em;
+        margin-top: 2rem;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- <div class="images">
+      <img src="path/cat.png" alt="猫の画像" class="img_cat" />
+       <img src="path/dog.png" alt="犬の画像" class="img_dog" />
+      <img src="path/panda.png" alt="パンダの画像" class="img_panda" /> -->
+    <!-- </div> -->
+
+    <!-- <p>
+      <span>トライデントコンピュータ専門学校</span
+      >は<span>愛知県名古屋市</span>にあり、1984年に<span>開校</span>。IT技術者<span>多数育成</span>。現在、情報処理系<span>3学科</span>と<span>CG／ゲーム開発／Webデザイン／CAD</span>などの学科もあり、卒業生の<span>就職実績</span>も豊富です。
+    </p> -->
+    <!-- body中に
+
+    <h1 style="text-align: center">48</h1>
+    <button style="margin: auto; display: block">レッツゴー</button> -->
+
+    <section>
+      <h1>醤油らーめん</h1>
+      <div class="ramenArea">
+        <img
+          src="https://4.bp.blogspot.com/-SmXTKx3nBcA/UrlnHYwXxoI/AAAAAAAAcOA/erB3n3GC80E/s800/ramen_syouyu.png"
+          alt="醤油ラーメン"
+        />
+        <p class="unit"><span>450</span>円</p>
+      </div>
+      <div class="price">
+        <button class="minus">-</button>
+        <p class="num">0</p>
+        <button class="plus">+</button>
+      </div>
+      <button class="order">注文する</button>
+      <p class="result"></p>
+    </section>
+    <script>
+      // 　10
+      const ramenPrice = document.querySelector("p span");
+      const plusBtn = document.querySelectorAll(".plus button");
+      const minusBtn = document.querySelectorAll(".minus button");
+
+      // 8
+
+      //   const age = Math.floor(Math.random() * 100);
+      //   let message;
+      //   //ここに記述
+
+      //   if (age <= 18) {
+      //     message = "未成年";
+      //   } else if (age <= 65) {
+      //     message = "成人";
+      //   } else {
+      //     message = "シニア";
+      //   }
+      //   //ここまで
+      //   console.log(`年齢: ${age} 歳, メッセージ: ${message}`);
+
+      // 7
+      //   //ここに記述する
+      //   const colorbtn = document.querySelectorAll("button");
+      //   const background = document.querySelector(".colorlist");
+      //   const color = this.id;
+      //   colorbtn[i].addEventListener("click", function () {
+      //     console.log(colorbtn[i]);
+      //   });
+
+      // 1
+      //   const school = "トライデントコンピュータ専門学校";
+
+      //   const course = "Webデザイン学科";
+      //   console.log(school + course);
+
+      //   2
+      //   const catImg = document.querySelector(".img_cat");
+      //   console.log(catImg);
+      //   const alt = catImg.getAttribute("alt");
+      //   console.log(alt);
+
+      // 3
+      //   const goranger = [
+      //     "アカレンジャー",
+      //     "アオレンジャー",
+      //     "ミドレンジャー",
+      //     "キレンジャー",
+      //     "モモレンジャー",
+      //   ];
+      //   //   console.log(goranger[4]);
+
+      //   for (let i = 0; i < goranger.length; i++) {
+      //     console.log(goranger[i]);
+      //   }
+
+      // //   4
+      //   const clickText = document.querySelectorAll("span");
+
+      //   for (let i = 0; i < clickText.length; i++) {
+      //     clickText[i].addEventListener("click", function () {
+      //       console.log(clickText[i]);
+      //       clickText[i].style.color = "#f00";
+      //       clickText[i].style.fontWeight = "bold";
+      //     });
+      //   }
+
+      //   5
+      //   const btn = document.querySelector("button");
+      //   const gnav = document.querySelector("nav");
+      //   console.log(gnav);
+      //   btn.addEventListener("click", function () {
+      //     gnav.classList.toggle("open");
+      //     console.log(gnav);
+      //   });
+
+      //   6
+      //   const akbsites = [
+      //     "https://www.akb48.co.jp/",
+      //     "https://www.ske48.co.jp/",
+      //     "http://www.nmb48.com/",
+      //     "http://www.hkt48.jp/",
+      //   ];
+      //   const button = document.querySelector("button");
+      //   const h1Elm = document.querySelector("h1");
+
+      //   button.addEventListener("click", function () {
+      //     // 0〜3の数値
+      //     const title = Math.floor(Math.random() * 4);
+      //     // 数値に1を足す
+      //     const number = title + 1;
+
+      //     // a要素を作成
+      //     const alink = document.createElement("a");
+      //     alink.innerText = number;
+
+      //     // 数値に対応するリンクを設定
+      //     if (number === 1) {
+      //       alink.setAttribute("href", akbsites[0]);
+      //     } else if (number === 2) {
+      //       alink.setAttribute("href", akbsites[1]);
+      //     } else if (number === 3) {
+      //       alink.setAttribute("href", akbsites[2]);
+      //     } else if (number === 4) {
+      //       alink.setAttribute("href", akbsites[3]);
+      //     }
+
+      //     // h1の中身をノードで入れ替える
+      //     h1Elm.replaceChildren(alink);
+      //   });
+    </script>
+  </body>
+</html>
