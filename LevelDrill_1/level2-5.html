@@ -23,26 +23,29 @@
       const ono = "大野智";
       const sakurai = "櫻井翔";
 
-      const arashi1 = document.createElement("li");
-      arashi1.textContent = aiba;
+      const member = [aiba, matsujun, nino, ono, sakurai];
+      console.log(member);
 
-      const arashi2 = document.createElement("li");
-      arashi2.textContent = matsujun;
+      for (let i = 0; i < 5; i++) {
+        const arashi = document.createElement("li");
+        arashi.textContent = member[i];
+        sailorSensi.appendChild(arashi);
+      }
 
-      const arashi3 = document.createElement("li");
-      arashi3.textContent = nino;
+      // const arashi1 = document.createElement("li");
+      // arashi1.textContent = aiba;
 
-      const arashi4 = document.createElement("li");
-      arashi4.textContent = ono;
+      // const arashi2 = document.createElement("li");
+      // arashi2.textContent = matsujun;
 
-      const arashi5 = document.createElement("li");
-      arashi5.textContent = sakurai;
+      // const arashi3 = document.createElement("li");
+      // arashi3.textContent = nino;
 
-      sailorSensi.appendChild(arashi1);
-      sailorSensi.appendChild(arashi2);
-      sailorSensi.appendChild(arashi3);
-      sailorSensi.appendChild(arashi4);
-      sailorSensi.appendChild(arashi5);
+      // const arashi4 = document.createElement("li");
+      // arashi4.textContent = ono;
+
+      // const arashi5 = document.createElement("li");
+      // arashi5.textContent = sakurai;
     </script>
   </body>
 </html>
