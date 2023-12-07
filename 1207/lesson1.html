@@ -6,63 +6,10 @@
     <title>Document</title>
   </head>
   <body>
-    <ul>
-      <li>犬</li>
-      <li>猫</li>
-    </ul>
-
-    <p class="result"></p>
     <button class="lesserafim">ルセラフィムメンバー</button>
     <button class="onepiece">麦わらの一味</button>
     <div class="fnArea"></div>
-
     <script>
-      //   const dog = document.querySelector("li");
-      //   console.log(dog);
-      //   const cat = document.querySelector("li:nth-child(2)");
-      //   console.log(cat);
-      //   const result = document.querySelector(".result");
-      //   console.log(result);
-      //   dog.addEventListener("click", function () {
-      //     result.textContent = "あなたは犬派です";
-      //   });
-      //   cat.addEventListener("click", function () {
-      //     result.textContent = "あなたは猫派です";
-      //   });
-
-      //   for文を使う
-
-      const result = document.querySelector(".result");
-
-      for (let i = 0; i <= 1; i++) {
-        const btn = document.querySelectorAll("ul li");
-        btn[i].addEventListener("click", function () {
-          result.textContent = "あなたは" + btn[i].textContent + "派です";
-        });
-      }
-
-      const yoshinoya = function (menu, size, option, price) {
-        const gyudon = menu + "の" + size + "、" + option + "で" + price + "円";
-        console.log(gyudon);
-        console.log(`${menu}の${size}、${option}で${price}円です`);
-      };
-      yoshinoya("牛丼", "並盛", "つゆだく", 388); //牛丼の並盛、つゆだくで 388 円
-      yoshinoya("豚丼", "大盛", "たまご", 592); //豚丼の大盛、たまごで 592 円
-
-      //   引数が配列
-      const sumCard = function (card) {
-        let total = 0;
-        // すべてを足す処理
-        for (let i = 0; i < card.length; i++) {
-          total += card[i]; //toral = total + card[i]
-        }
-        console.log(total);
-      };
-      //   配列
-      const card_list = [1, 2, 3, 4];
-      // 関数の実行、引数には配列
-      sumCard(card_list); //10
-
       const member_list = [
         "チェウォン",
         "サクラ",
@@ -121,6 +68,25 @@
       });
       // memberPush(member_list);
       // menuberPush(mugiwara_list);
+
+      //引数１と引数２を足す、 関数の定義
+      const addtion = function (a, b) {
+        const c = a + b;
+        console.log(c);
+      };
+      // 関数の実行
+      addtion(10, 11); //コンソールに２１と表示される
+      addtion(30, "6"); //306
+
+      //   戻り値のある関数の定義
+      const addtion2 = function (a, b) {
+        const c = a * b;
+        return c;
+      };
+
+      //   関数の実行
+      const result = addtion2(5, 5); //25
+      console.log(result); //コンソールに25と表示される
     </script>
   </body>
 </html>
