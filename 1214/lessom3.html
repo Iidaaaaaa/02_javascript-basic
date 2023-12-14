@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      //従来の関数式
+      const dog = function () {
+        return "わんわん";
+      };
+      console.log(dog()); //わんわん
+
+      //アロー関数
+      const cat = () => {
+        return "にゃーにゃー";
+      };
+      console.log(cat()); //にゃーにゃー
+
+      // 関数catの実行 = ()があるから
+      console.log(cat());
+
+      // 泣き方を決めたい アロー関数+引数
+      const animal = (voice) => {
+        return voice;
+      };
+
+      // 関数animal の実行
+      console.log(animal("みゃあみゃあ"));
+
+      const thisElm = document.querySelector("p");
+      console.log(thisElm);
+
+      thisElm.addEventListener("click", (e) => {
+        console.log("クリック");
+      });
+    </script>
+  </body>
+</html>

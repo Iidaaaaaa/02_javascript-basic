@@ -69,12 +69,15 @@
           imageArea.setAttribute("src", "images/" + fujiImg_list[count]);
         }
       };
+      const slideShow = function (func) {
+        setInterval(func, 2000);
+      };
+      slideShow(next);
 
-      // 関数の実行
       nextBtn.addEventListener("click", function () {
         next();
       });
-      // 関数の実行
+      // 関数の実行;
       preBtn.addEventListener("click", function () {
         prev();
       });
