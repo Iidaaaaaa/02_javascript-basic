@@ -55,8 +55,18 @@
       const xg = document.querySelectorAll(".xg li");
       const member = document.querySelector(".member img");
       const memberSrc = member.getAttribute("src");
+      member_list = [
+        ".images/jurin.webp",
+        ".images/chisa.webp",
+        "./images/hinata.webp",
+        "./images/harvey.webp",
+        ".images/juria.webp",
+        "./images/maya.webp",
+        ".images/cocona.webp",
+      ];
       for (let i = 0; i < xg.length; i++) {
         console.log(xg[i]);
+        console.log(member_list[i]);
       }
       member.addEventListener("mouseover", function () {
         member.setAttribute("src", "./images/oyama.jpg");
@@ -68,15 +78,6 @@
           "https://xgalx.com/xg/assets/img/common/logo_sitetitle.svg"
         );
       });
-      member_list = [
-        ".images/azuma.webp",
-        ".images/chisa.webp",
-        "./images/hinata.webp",
-        "./images/harvey.webp",
-        ".images/juria.webp",
-        "./images/maya.webp",
-        ".images/cocona.webp",
-      ];
     </script>
   </body>
 </html>

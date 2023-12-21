@@ -1,0 +1,53 @@
+@charset "UTF-8";
+.slide {
+  display: flex;
+  width: 70%;
+  overflow: hidden;
+  margin: auto;
+  position: relative;
+}
+
+.slide img {
+  width: 100%;
+  min-width: 100%;
+  transition: all 0.5s ease-in;
+}
+
+.slide img:first-child {
+  margin-left: -100%;
+}
+
+/* ボタンを横並びで中央揃えに */
+.buttons {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.leftBtn {
+  position: absolute;
+  top: 8px;
+  right: 257px;
+  padding: 364px 30px;
+  background-color: #f4f4f4;
+  border: none;
+  opacity: 0;
+}
+.rightBtn {
+  position: absolute;
+  top: 8px;
+  left: 257px;
+  padding: 364px 30px;
+  opacity: 0;
+  background-color: #f4f4f4;
+  border: none;
+}
+
+.banana {
+  position: absolute;
+  bottom: 300px;
+  left: -100px;
+}
+.ido {
+  transition: all 2s ease-in;
+  left: 2000px;
+}
