@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="ja">
   <head>
     <meta charset="UTF-8" />
@@ -55,6 +55,28 @@
       const xg = document.querySelectorAll(".xg li");
       const member = document.querySelector(".member img");
       const memberSrc = member.getAttribute("src");
+      for (let i = 0; i < xg.length; i++) {
+        console.log(xg[i]);
+      }
+      member.addEventListener("mouseover", function () {
+        member.setAttribute("src", "./images/oyama.jpg");
+        console.log(memberSrc);
+      });
+      member.addEventListener("mouseout", function () {
+        member.setAttribute(
+          "src",
+          "https://xgalx.com/xg/assets/img/common/logo_sitetitle.svg"
+        );
+      });
+      member_list = [
+        ".images/azuma.webp",
+        ".images/chisa.webp",
+        "./images/hinata.webp",
+        "./images/harvey.webp",
+        ".images/juria.webp",
+        "./images/maya.webp",
+        ".images/cocona.webp",
+      ];
     </script>
   </body>
 </html>
