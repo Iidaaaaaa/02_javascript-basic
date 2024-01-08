@@ -61,6 +61,59 @@
       });
 
       //他のメンバーのマウスオーバーイベントをプログラムしてください。
+      const shunto = document.querySelector(".shunto");
+      shunto.addEventListener("mouseover", function () {
+        member.innerHTML =
+          '<img src="images/shunto.jpg" alt="' + shunto.innerText + '">';
+      });
+      shunto.addEventListener("mouseout", function () {
+        member.innerHTML = '<img src="images/befirst.svg" alt="BE:FIRSTロゴ">';
+      });
+
+      const manato = document.querySelector(".manato");
+      manato.addEventListener("mouseover", function () {
+        member.innerHTML =
+          '<img src="images/manato.jpg" alt="' + manato.innerText + '">';
+      });
+      manato.addEventListener("mouseout", function () {
+        member.innerHTML = '<img src="images/befirst.svg" alt="BE:FIRSTロゴ">';
+      });
+      //他のメンバーのマウスオーバーイベントをプログラムしてください。
+      const ruiki = document.querySelector(".ruiki");
+      ruiki.addEventListener("mouseover", function () {
+        member.innerHTML =
+          '<img src="images/ryoki.jpg" alt="' + ruiki.innerText + '">';
+      });
+      ruiki.addEventListener("mouseout", function () {
+        member.innerHTML = '<img src="images/befirst.svg" alt="BE:FIRSTロゴ">';
+      });
+
+      const sota = document.querySelector(".sota");
+      sota.addEventListener("mouseover", function () {
+        member.innerHTML =
+          '<img src="images/sota.jpg" alt="' + sota.innerText + '">';
+      });
+      sota.addEventListener("mouseout", function () {
+        member.innerHTML = '<img src="images/befirst.svg" alt="BE:FIRSTロゴ">';
+      });
+
+      const leo = document.querySelector(".leo");
+      leo.addEventListener("mouseover", function () {
+        member.innerHTML =
+          '<img src="images/leo.jpg" alt="' + leo.innerText + '">';
+      });
+      leo.addEventListener("mouseout", function () {
+        member.innerHTML = '<img src="images/befirst.svg" alt="BE:FIRSTロゴ">';
+      });
+
+      const junon = document.querySelector(".junon");
+      junon.addEventListener("mouseover", function () {
+        member.innerHTML =
+          '<img src="images/junon.jpg" alt="' + junon.innerText + '">';
+      });
+      junon.addEventListener("mouseout", function () {
+        member.innerHTML = '<img src="images/befirst.svg" alt="BE:FIRSTロゴ">';
+      });
     </script>
   </body>
 </html>

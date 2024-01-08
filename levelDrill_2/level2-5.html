@@ -24,12 +24,26 @@
       const mayuyu = "渡辺麻友";
       const takamina = "高橋みなみ";
 
-      //例：前田敦子を追加
-      const liElm1 = document.createElement("li");
-      liElm1.textContent = atsuko;
-      sailorSensi.appendChild(liElm1);
+      // //例：前田敦子を追加
+      // const liElm1 = document.createElement("li");
+      // liElm1.textContent = atsuko;
+      // sailorSensi.appendChild(liElm1);
 
       //他のメンバーを追加してください。
+      const idollist = [
+        atsuko,
+        yuko,
+        kojiharu,
+        mariko,
+        tomochin,
+        mayuyu,
+        takamina,
+      ];
+      for (let i = 0; i < idollist.length; i++) {
+        const liElm1 = document.createElement("li");
+        liElm1.textContent = idollist[i];
+        sailorSensi.appendChild(liElm1);
+      }
     </script>
   </body>
 </html>

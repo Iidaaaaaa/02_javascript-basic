@@ -42,13 +42,19 @@
     <script>
       //下記の変数を使って、ボックスをクリックするとid属性値を使って、bodyの背景色がトグルするようにしてください。
       const box = document.querySelectorAll(".box");
-      //例
+      // //例
       box[0].addEventListener("click", function () {
         const idvalue = box[0].getAttribute("id");
         document.body.style.backgroundColor = idvalue;
       });
 
       // for文で書ければ、書いてください。
+
+      box[1].addEventListener("click", function () {
+        const redcolor = box[1].getAttribute("id");
+        document.body.style.backgroundColor = redcolor;
+      });
+      // わからない
     </script>
   </body>
 </html>

@@ -34,9 +34,38 @@
       /*formから値を取得するには、
       const year = document.querySelector("#year").value;
       を使います。*/
+      const year = document.querySelector("#year").value;
+      // 干支の配列
+
+      const juunisi = [
+        "子",
+        "丑",
+        "寅",
+        "卯",
+        "辰",
+        "巳",
+        "午",
+        "未",
+        "申",
+        "酉",
+        "戌",
+        "亥",
+      ];
+
+      const eto = function () {
+        const etoIndex = year % 12;
+        const etoResult = juunisi[etoIndex];
+
+        // 結果を表示
+        alert(year + "年は「" + etoResult + "」です。");
+      };
 
       //関数etoの実行
-      eto();
+
+      btn.addEventListener("click", function () {
+        eto();
+      });
+      // わからない
     </script>
   </body>
 </html>

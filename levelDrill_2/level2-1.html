@@ -27,12 +27,19 @@
       console.log(cheese.textContent);
 
       //牛めしをquerySelectorで取得しコンソールで表示
-
+      const base = document.querySelector(".base");
+      console.log(base.textContent);
       //ネギとろろ牛めしをquerySelectorで取得しコンソールで表示※nth-childを使う。
-
+      const tororo = document.querySelector("li:nth-child(5)");
+      console.log(tororo.textContent);
       //ネギたっぷり旨辛ネギたま牛めしをquerySelectorAll("li")で取得し、コンソールで表示
-
+      const umakara = document.querySelectorAll("li");
+      console.log(umakara[5].textContent);
       //class="negi"をquerySelectorAllで取得し、for文で全てをコンソールで表示
+      const negiAll = document.querySelectorAll(".negi");
+      for (let i = 0; i < negiAll.length; i++) {
+        console.log(negiAll[i].textContent);
+      }
     </script>
   </body>
 </html>

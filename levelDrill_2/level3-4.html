@@ -35,6 +35,21 @@
 
       const numArea = document.querySelectorAll(".slot li");
       const btn = document.querySelectorAll("button");
+
+      btn[0].addEventListener("click", function () {
+        const num = Math.round(Math.random() * 7);
+        numArea[0].textContent = num;
+      });
+
+      btn[1].addEventListener("click", function () {
+        const num2 = Math.round(Math.random() * 7);
+        numArea[1].textContent = num2;
+      });
+      btn[2].addEventListener("click", function () {
+        const num3 = Math.round(Math.random() * 7);
+        numArea[2].textContent = num3;
+      });
+      // わからない
     </script>
   </body>
 </html>

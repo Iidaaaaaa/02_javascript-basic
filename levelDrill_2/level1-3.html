@@ -15,9 +15,9 @@
       <li class="sample">札幌</li>
       <li class="kitakata">喜多方</li>
       <li class="iekei">横濱家系</li>
-      <li class="taiwan">台湾ラーメン</li>
+      <li class="taiwan">台湾</li>
       <li class="onomichi">尾道</li>
-      <li class="hakata">ラーメン</li>
+      <li class="hakata">博多</li>
     </ul>
 
     <script>
@@ -32,14 +32,26 @@
 
       //上記htmlから各単語を取得し変数に代入し、5種類のラーメンをコンソールに表示させてください。
       // 喜多方らーめん
+      const kitakata = document.querySelector(".kitakata");
+      const kitakataText = kitakata.textContent;
+      console.log(kitakataText + ramen);
 
       // 横浜家系ラーメン
-
+      const iekei = document.querySelector(".iekei");
+      const iekeiText = iekei.textContent;
+      console.log(iekeiText + ramen);
       // 台湾ラーメン
-
+      const taiwan = document.querySelector(".taiwan");
+      const taiwanText = taiwan.textContent;
+      console.log(taiwanText + ramen);
       // 尾道ラーメン
-
+      const onomichi = document.querySelector(".onomichi");
+      const onomichiText = onomichi.textContent;
+      console.log(onomichiText + ramen);
       // 博多ラーメン
+      const hakata = document.querySelector(".hakata");
+      const hakataText = hakata.textContent;
+      console.log(hakataText + ramen);
     </script>
   </body>
 </html>

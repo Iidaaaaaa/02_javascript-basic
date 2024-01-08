@@ -35,14 +35,26 @@
 
       //上記htmlから要素を取得し、適切な都道府県を組み合わせる
       // 北海道
-
+      const hokkaido = document.querySelector(".hokkaido");
+      const hokkaidoTex = hokkaido.textContent + dou;
+      hokkaido.innerText = hokkaidoTex;
       // 東京都
-
+      const tokyo = document.querySelector(".tokyo");
+      const tokyoTex = tokyo.textContent + to;
+      tokyo.innerText = tokyoTex;
       // 京都府
-
+      const kyoto = document.querySelector(".kyoto");
+      const kyotoTex = kyoto.textContent + yo;
+      kyoto.innerText = kyotoTex;
       // 大阪府
-
+      const osaka = document.querySelector(".osaka");
+      const osakaTex = osaka.textContent + yo;
+      osaka.innerText = osakaTex;
       // 愛知県
+      const aichi = document.querySelector(".aichi");
+      //抜き出したテキストと適切な都道府県を組み合わせる
+      const aichiTex = aichi.textContent + ken;
+      aichi.innerText = aichiTex;
     </script>
   </body>
 </html>
