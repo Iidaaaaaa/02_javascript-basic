@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      const championship = {
+        y2018: "大阪桐蔭",
+        y2019: "履正社",
+        y2020: "新型コロナ感染拡大の影響で中止",
+        y2021: "智弁和歌山",
+        y2022: "仙台育英",
+        y2023: "慶應",
+      };
+      const selection = {
+        2018: "大阪桐蔭",
+        2019: "東邦",
+        2020: "新型コロナ感染拡大の影響で中止",
+        2021: "東海大相模",
+        2022: "大阪桐蔭",
+        2023: "山梨学院",
+      };
+
+      console.log(championship.y2023);
+      console.log(selection["2023"]);
+
+      const hashira_list = {
+        water: "鱗滝左近次",
+        worm: "胡蝶しのぶ",
+        flame: "煉獄杏寿郎",
+        sound: "宇髄天元",
+        love: "甘露寺蜜璃",
+      };
+      hashira_list.rock = "悲鳴嶼行冥";
+      hashira_list.haze = "時透無一郎";
+      hashira_list.snake = "伊黒小芭内";
+      hashira_list.wind = "不死川実弥";
+
+      console.log(hashira_list);
+      hashira_list["water"] = "冨岡義勇";
+      console.log(hashira_list);
+    </script>
+  </body>
+</html>
