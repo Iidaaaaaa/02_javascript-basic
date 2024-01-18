@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table,
+      td,
+      th {
+        padding: 20px;
+        padding-right: 450px;
+        border: 1px solid #333;
+        border-collapse: collapse;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>人気のフルーツ一覧</h1>
+    <ul></ul>
+    <h1>数字を英語で表現する</h1>
+    <table class="table_nam">
+      <tr>
+        <th>数字</th>
+        <th>英語</th>
+      </tr>
+    </table>
+
+    <script>
+      const fruits = ["りんご", "もも", "バナナ"];
+      const ul = document.querySelector("ul");
+      for (let name of fruits) {
+        const li = document.createElement("li");
+        li.innerHTML = name;
+        ul.appendChild(li);
+      }
+
+      for (let name of fruits) {
+        console.log(name);
+        const li = document.createElement("li");
+        li.innerHTML = name;
+        ul.appendChild;
+      }
+
+      const Table = document.querySelector(".table_nam");
+      const numbers = ["zero", "one", "two", "three", "four", "five"];
+
+      //   for (let i = 0; i < numbers.length; i++) {
+      //     const List = document.createElement("tr");
+      //     const cell = document.createElement("td");
+      //     cell.innerHTML = i;
+      //     List.appendChild(cell);
+      //     const data = document.createElement("td");
+      //     data.innerHTML = numbers[i];
+      //     List.appendChild(data);
+      //     Table.appendChild(List);
+      //   }
+      for (let i = 0; i < numbers.length; i++) {
+        const List2 = document.createElement("tr");
+        for (let j = 0; j < 2; j++) {
+          const cell2 = document.createElement("td");
+          if (j === 1) {
+            cell2.innerHTML = numbers[i];
+          } else {
+            cell2.innerHTML = i;
+          }
+          List2.appendChild(cell2);
+        }
+        Table.appendChild(List2);
+      }
+    </script>
+  </body>
+</html>

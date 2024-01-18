@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>object</title>
+  </head>
+  <body>
+    <script>
+      const countries = {
+        Japan: "日本",
+        USA: "アメリカ",
+        China: "中国",
+        Korea: "韓国",
+      };
+
+      console.log(countries["USA"]); //アメリががほしい
+      console.log(countries.USA);
+
+      //for...in文
+      for (let country in countries) {
+        console.log(countries[country]);
+      }
+
+      const meibo_obj = [
+        //[]で囲まれているので、配列
+        { id: "20224", name: "新井太郎" }, //{}で囲まれているので、オブジェクト
+        { id: "20031", name: "井上次郎" },
+        { id: "20193", name: "山本花子" },
+      ];
+
+      //オブジェクトが３つはいっているオブジェクト
+      //配列の要素が全部欲しいfor文
+      for (let i = 0; i < meibo_obj.length; i++) {
+        console.log(meibo_obj[i]);
+        for (num in meibo_obj[i]) {
+          //名簿の0番目の受験者番号と受験者名を出力する
+          console.log(meibo_obj[0]["id"]);
+          console.log(meibo_obj[0]["name"]);
+        }
+        //配列に入ったオブジェクトを表示しようとするから、num in meibo_obj[i]という書き方になる
+      }
+
+      let npbCentral_list = [
+        { team: "東京ヤクルトスワローズ", home: "東京" },
+        { team: "阪神タイガース", home: "大阪" },
+        { team: "読売ジャイアンツ", home: "東京" },
+        { team: "広島東洋カープ", home: "広島" },
+        { team: "中日ドラゴンズ", home: "名古屋" },
+        { team: "横浜DeNAベイスターズ", home: "横浜" },
+      ];
+      //中日ドラゴンズの本拠地をconsoleに表示する
+      //配列の指定→オブジェクトの指定
+      //for文、for..in文は使わなくても良い
+      console.log(npbCentral_list[4].home);
+      console.log(npbCentral_list[4]["home"]);
+    </script>
+  </body>
+</html>
